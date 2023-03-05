@@ -1,0 +1,99 @@
+==========
+References
+==========
+WebApi.NetFramework
+System.Web.Optimization
+System.Web.Mvc
+System.Web.Routing
+System.Web.Http
+WebApi.NetFramework.Areas.HelpPage
+System.Web.Http.Description
+System
+System.Web
+System.Text
+System.Diagnostics.CodeAnalysis
+WebApi.NetFramework.Areas.HelpPage.Controllers
+WebApi.NetFramework.Areas.HelpPage.Models
+WebApi.NetFramework.Areas.HelpPage.ModelDescriptions
+System.Collections.Generic
+System.Web.Http.Controllers
+System.Net.Http.Headers
+System.Collections.Concurrent
+System.Linq
+System.Collections.ObjectModel
+System.Globalization
+System.Diagnostics
+System.ComponentModel
+System.Net.Http
+System.Reflection
+System.ComponentModel.DataAnnotations
+System.Collections.Specialized
+System.Collections
+Newtonsoft.Json
+System.Runtime.Serialization
+System.Xml.Serialization
+System.Net.Http.Formatting
+System.IO
+System.Threading.Tasks
+System.Xml.Linq
+System.Xml.XPath
+WebApi.NetFramework.Controllers
+System.Net
+System.Runtime.CompilerServices
+System.Runtime.InteropServices
+project.all
+
+===============
+DownloadedFiles
+===============
+project.all.json
+system.web.json
+system.web.http.json
+system.collections.specialized.json
+system.web.mvc.json
+
+==============
+ProjectResults
+==============
+----------------------
+Showing results for: C:\Users\jamesuk\source\github\dotnet-serverless-modernization\src\WebApi\legacy\WebApi.NetFramework\WebApi.NetFramework\WebApi.NetFramework.csproj
+----------------------
+---------------------------
+Target Versions:
+---------------------------
+net6.0
+---------------------------
+Source Versions:
+---------------------------
+net48
+---------------------------
+Upgrade packages:
+---------------------------
+---------------------------
+Action packages:
+---------------------------
+
+----------------------
+Showing results for: C:\Users\jamesuk\source\github\dotnet-serverless-modernization\src\WebApi\legacy\WebApi.NetFramework\WebApi.NetFramework\WebApi.NetFramework.csproj
+----------------------
+---------------------------
+Target Versions:
+---------------------------
+net6.0
+---------------------------
+Source Versions:
+---------------------------
+net48
+---------------------------
+Upgrade packages:
+---------------------------
+---------------------------
+Action packages:
+---------------------------
+
+
+===========
+BuildErrors
+===========
+
+

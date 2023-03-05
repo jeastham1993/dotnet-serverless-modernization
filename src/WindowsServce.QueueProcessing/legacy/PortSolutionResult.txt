@@ -1,0 +1,64 @@
+==========
+References
+==========
+MessageProcessor.Shared
+System.Threading.Tasks
+System
+System.Collections.Generic
+System.Reflection
+System.Runtime.CompilerServices
+System.Runtime.InteropServices
+System.Linq
+System.Text
+project.all
+
+===============
+DownloadedFiles
+===============
+project.all.json
+
+==============
+ProjectResults
+==============
+----------------------
+Showing results for: C:\Users\jamesuk\source\github\dotnet-serverless-modernization\src\WindowsServce.QueueProcessing\legacy\QueueProcessor.Shared\QueueProcessor.Shared.csproj
+----------------------
+---------------------------
+Target Versions:
+---------------------------
+net6.0
+---------------------------
+Source Versions:
+---------------------------
+net48
+---------------------------
+Upgrade packages:
+---------------------------
+---------------------------
+Action packages:
+---------------------------
+
+----------------------
+Showing results for: C:\Users\jamesuk\source\github\dotnet-serverless-modernization\src\WindowsServce.QueueProcessing\legacy\QueueProcessor.Shared\QueueProcessor.Shared.csproj
+----------------------
+---------------------------
+Target Versions:
+---------------------------
+net6.0
+---------------------------
+Source Versions:
+---------------------------
+net48
+---------------------------
+Upgrade packages:
+---------------------------
+---------------------------
+Action packages:
+---------------------------
+
+
+===========
+BuildErrors
+===========
+
+

@@ -1,0 +1,527 @@
+==========
+References
+==========
+WebApi.NetFramework
+System.Web.Optimization
+System.Web.Mvc
+System.Web.Routing
+System.Web.Http
+WebApi.NetFramework.Areas.HelpPage
+System.Web.Http.Description
+System
+System.Collections.Specialized
+System.Web
+System.Text
+System.Net.Http
+System.Diagnostics.CodeAnalysis
+WebApi.NetFramework.Areas.HelpPage.Controllers
+WebApi.NetFramework.Areas.HelpPage.Models
+WebApi.NetFramework.Areas.HelpPage.ModelDescriptions
+System.Collections.Generic
+System.Web.Http.Controllers
+System.Net.Http.Headers
+System.Collections.Concurrent
+System.Linq
+System.Collections.ObjectModel
+System.Globalization
+System.Diagnostics
+System.ComponentModel
+System.Reflection
+System.ComponentModel.DataAnnotations
+System.Collections
+Newtonsoft.Json
+System.Runtime.Serialization
+System.Xml.Serialization
+System.Net.Http.Formatting
+System.IO
+System.Threading.Tasks
+System.Xml.Linq
+System.Xml.XPath
+WebApi.NetFramework.Controllers
+System.Net
+System.Runtime.CompilerServices
+System.Runtime.InteropServices
+project.all
+
+===============
+DownloadedFiles
+===============
+project.all.json
+system.web.json
+system.collections.specialized.json
+system.web.http.json
+system.web.mvc.json
+
+==============
+ProjectResults
+==============
+----------------------
+Showing results for: C:\Users\jamesuk\source\github\dotnet-serverless-modernization\src\WebApi\serverless\WebApi.NetFramework\WebApi.NetFramework.csproj
+----------------------
+---------------------------
+Target Versions:
+---------------------------
+net6.0
+---------------------------
+Source Versions:
+---------------------------
+net48
+---------------------------
+Upgrade packages:
+---------------------------
+jQuery,3.4.1->3.5.0
+Newtonsoft.Json,12.0.2->12.0.3
+---------------------------
+Action packages:
+---------------------------
+---------------------------
+Executed Actions for file: Project
+---------------------------
+
+Action Type: Project
+Action Name: ArchiveFiles
+Action Value: BundleConfig.cs,FilterConfig.cs,RouteConfig.cs,WebApiConfig.cs,global.asax.cs,global.asax,AssemblyInfo.cs,packages.config
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: Project
+Action Name: CreateNet6FolderHierarchy
+Action Value: 
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: Project
+Action Name: MigrateConfig
+Action Value: 
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: ProjectFile
+Action Name: MigrateProjectFile
+Action Value: 
+Times Run: 1
+Invalid Executions: 0
+
+---------------------------
+Executed Actions for file: C:\Users\jamesuk\source\github\dotnet-serverless-modernization\src\WebApi\serverless\WebApi.NetFramework\Global.asax.cs
+---------------------------
+
+Action Type: Class
+Action Name: RemoveBaseClass
+Action Value: IHttpHandler
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: Class
+Action Name: AddExpression
+Action Value: RequestDelegate_next=null;
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: Class
+Action Name: CreateConstructor
+Action Value: {"types":"RequestDelegate","identifiers":"next"}
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: Class
+Action Name: ChangeMethodName
+Action Value: {"existingMethodName":"ProcessRequest","newMethodName":"Invoke"}
+Times Run: 1
+Invalid Executions: 1
+
+Action Type: Class
+Action Name: ReplaceMethodModifiers
+Action Value: {"methodName":"Invoke","modifiers":"publicasync"}
+Times Run: 1
+Invalid Executions: 1
+
+Action Type: Class
+Action Name: ChangeMethodToReturnTaskType
+Action Value: Invoke
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: Using
+Action Name: RemoveDirective
+Action Value: System.Web.Mvc
+Times Run: 2
+Invalid Executions: 0
+
+Action Type: Using
+Action Name: RemoveDirective
+Action Value: System.Web
+Times Run: 2
+Invalid Executions: 0
+
+Action Type: Using
+Action Name: AddDirective
+Action Value: Microsoft.AspNetCore.Mvc
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: Using
+Action Name: AddDirective
+Action Value: Microsoft.AspNetCore.Http
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: Using
+Action Name: AddDirective
+Action Value: System.Threading.Tasks
+Times Run: 1
+Invalid Executions: 0
+
+---------------------------
+Executed Actions for file: C:\Users\jamesuk\source\github\dotnet-serverless-modernization\src\WebApi\serverless\WebApi.NetFramework\App_Start\RouteConfig.cs
+---------------------------
+
+Action Type: Using
+Action Name: RemoveDirective
+Action Value: System.Web.Mvc
+Times Run: 2
+Invalid Executions: 0
+
+Action Type: Using
+Action Name: AddDirective
+Action Value: Microsoft.AspNetCore.Mvc
+Times Run: 1
+Invalid Executions: 0
+
+---------------------------
+Executed Actions for file: C:\Users\jamesuk\source\github\dotnet-serverless-modernization\src\WebApi\serverless\WebApi.NetFramework\App_Start\FilterConfig.cs
+---------------------------
+
+Action Type: Using
+Action Name: RemoveDirective
+Action Value: System.Web.Mvc
+Times Run: 2
+Invalid Executions: 0
+
+Action Type: Using
+Action Name: AddDirective
+Action Value: Microsoft.AspNetCore.Mvc
+Times Run: 1
+Invalid Executions: 0
+
+---------------------------
+Executed Actions for file: C:\Users\jamesuk\source\github\dotnet-serverless-modernization\src\WebApi\serverless\WebApi.NetFramework\Controllers\HomeController.cs
+---------------------------
+
+Action Type: Using
+Action Name: RemoveDirective
+Action Value: System.Web.Mvc
+Times Run: 2
+Invalid Executions: 0
+
+Action Type: Using
+Action Name: AddDirective
+Action Value: Microsoft.AspNetCore.Mvc
+Times Run: 1
+Invalid Executions: 0
+
+---------------------------
+Executed Actions for file: C:\Users\jamesuk\source\github\dotnet-serverless-modernization\src\WebApi\serverless\WebApi.NetFramework\Areas\HelpPage\HelpPageAreaRegistration.cs
+---------------------------
+
+Action Type: Using
+Action Name: RemoveDirective
+Action Value: System.Web.Mvc
+Times Run: 2
+Invalid Executions: 0
+
+Action Type: Using
+Action Name: AddDirective
+Action Value: Microsoft.AspNetCore.Mvc
+Times Run: 1
+Invalid Executions: 0
+
+---------------------------
+Executed Actions for file: C:\Users\jamesuk\source\github\dotnet-serverless-modernization\src\WebApi\serverless\WebApi.NetFramework\Areas\HelpPage\Controllers\HelpController.cs
+---------------------------
+
+Action Type: Using
+Action Name: RemoveDirective
+Action Value: System.Web.Mvc
+Times Run: 2
+Invalid Executions: 0
+
+Action Type: Using
+Action Name: AddDirective
+Action Value: Microsoft.AspNetCore.Mvc
+Times Run: 1
+Invalid Executions: 0
+
+---------------------------
+Executed Actions for file: C:\Users\jamesuk\source\github\dotnet-serverless-modernization\src\WebApi\serverless\WebApi.NetFramework\Controllers\ValuesController.cs
+---------------------------
+
+Action Type: Class
+Action Name: RemoveBaseClass
+Action Value: ApiController
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: Class
+Action Name: AddBaseClass
+Action Value: ControllerBase
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: Class
+Action Name: AddAttribute
+Action Value: ApiController
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: Using
+Action Name: RemoveDirective
+Action Value: System.Web.Http
+Times Run: 2
+Invalid Executions: 0
+
+Action Type: Using
+Action Name: AddDirective
+Action Value: Microsoft.AspNetCore.Mvc
+Times Run: 1
+Invalid Executions: 0
+
+
+----------------------
+Showing results for: C:\Users\jamesuk\source\github\dotnet-serverless-modernization\src\WebApi\serverless\WebApi.NetFramework\WebApi.NetFramework.csproj
+----------------------
+---------------------------
+Target Versions:
+---------------------------
+net6.0
+---------------------------
+Source Versions:
+---------------------------
+net48
+---------------------------
+Upgrade packages:
+---------------------------
+jQuery,3.4.1->3.5.0
+Newtonsoft.Json,12.0.2->12.0.3
+---------------------------
+Action packages:
+---------------------------
+---------------------------
+Executed Actions for file: Project
+---------------------------
+
+Action Type: Project
+Action Name: ArchiveFiles
+Action Value: BundleConfig.cs,FilterConfig.cs,RouteConfig.cs,WebApiConfig.cs,global.asax.cs,global.asax,AssemblyInfo.cs,packages.config
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: Project
+Action Name: CreateNet6FolderHierarchy
+Action Value: 
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: Project
+Action Name: MigrateConfig
+Action Value: 
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: ProjectFile
+Action Name: MigrateProjectFile
+Action Value: 
+Times Run: 1
+Invalid Executions: 0
+
+---------------------------
+Executed Actions for file: C:\Users\jamesuk\source\github\dotnet-serverless-modernization\src\WebApi\serverless\WebApi.NetFramework\Global.asax.cs
+---------------------------
+
+Action Type: Class
+Action Name: RemoveBaseClass
+Action Value: IHttpHandler
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: Class
+Action Name: AddExpression
+Action Value: RequestDelegate_next=null;
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: Class
+Action Name: CreateConstructor
+Action Value: {"types":"RequestDelegate","identifiers":"next"}
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: Class
+Action Name: ChangeMethodName
+Action Value: {"existingMethodName":"ProcessRequest","newMethodName":"Invoke"}
+Times Run: 1
+Invalid Executions: 1
+
+Action Type: Class
+Action Name: ReplaceMethodModifiers
+Action Value: {"methodName":"Invoke","modifiers":"publicasync"}
+Times Run: 1
+Invalid Executions: 1
+
+Action Type: Class
+Action Name: ChangeMethodToReturnTaskType
+Action Value: Invoke
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: Using
+Action Name: RemoveDirective
+Action Value: System.Web.Mvc
+Times Run: 2
+Invalid Executions: 0
+
+Action Type: Using
+Action Name: RemoveDirective
+Action Value: System.Web
+Times Run: 2
+Invalid Executions: 0
+
+Action Type: Using
+Action Name: AddDirective
+Action Value: Microsoft.AspNetCore.Mvc
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: Using
+Action Name: AddDirective
+Action Value: Microsoft.AspNetCore.Http
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: Using
+Action Name: AddDirective
+Action Value: System.Threading.Tasks
+Times Run: 1
+Invalid Executions: 0
+
+---------------------------
+Executed Actions for file: C:\Users\jamesuk\source\github\dotnet-serverless-modernization\src\WebApi\serverless\WebApi.NetFramework\App_Start\RouteConfig.cs
+---------------------------
+
+Action Type: Using
+Action Name: RemoveDirective
+Action Value: System.Web.Mvc
+Times Run: 2
+Invalid Executions: 0
+
+Action Type: Using
+Action Name: AddDirective
+Action Value: Microsoft.AspNetCore.Mvc
+Times Run: 1
+Invalid Executions: 0
+
+---------------------------
+Executed Actions for file: C:\Users\jamesuk\source\github\dotnet-serverless-modernization\src\WebApi\serverless\WebApi.NetFramework\App_Start\FilterConfig.cs
+---------------------------
+
+Action Type: Using
+Action Name: RemoveDirective
+Action Value: System.Web.Mvc
+Times Run: 2
+Invalid Executions: 0
+
+Action Type: Using
+Action Name: AddDirective
+Action Value: Microsoft.AspNetCore.Mvc
+Times Run: 1
+Invalid Executions: 0
+
+---------------------------
+Executed Actions for file: C:\Users\jamesuk\source\github\dotnet-serverless-modernization\src\WebApi\serverless\WebApi.NetFramework\Controllers\HomeController.cs
+---------------------------
+
+Action Type: Using
+Action Name: RemoveDirective
+Action Value: System.Web.Mvc
+Times Run: 2
+Invalid Executions: 0
+
+Action Type: Using
+Action Name: AddDirective
+Action Value: Microsoft.AspNetCore.Mvc
+Times Run: 1
+Invalid Executions: 0
+
+---------------------------
+Executed Actions for file: C:\Users\jamesuk\source\github\dotnet-serverless-modernization\src\WebApi\serverless\WebApi.NetFramework\Areas\HelpPage\HelpPageAreaRegistration.cs
+---------------------------
+
+Action Type: Using
+Action Name: RemoveDirective
+Action Value: System.Web.Mvc
+Times Run: 2
+Invalid Executions: 0
+
+Action Type: Using
+Action Name: AddDirective
+Action Value: Microsoft.AspNetCore.Mvc
+Times Run: 1
+Invalid Executions: 0
+
+---------------------------
+Executed Actions for file: C:\Users\jamesuk\source\github\dotnet-serverless-modernization\src\WebApi\serverless\WebApi.NetFramework\Areas\HelpPage\Controllers\HelpController.cs
+---------------------------
+
+Action Type: Using
+Action Name: RemoveDirective
+Action Value: System.Web.Mvc
+Times Run: 2
+Invalid Executions: 0
+
+Action Type: Using
+Action Name: AddDirective
+Action Value: Microsoft.AspNetCore.Mvc
+Times Run: 1
+Invalid Executions: 0
+
+---------------------------
+Executed Actions for file: C:\Users\jamesuk\source\github\dotnet-serverless-modernization\src\WebApi\serverless\WebApi.NetFramework\Controllers\ValuesController.cs
+---------------------------
+
+Action Type: Class
+Action Name: RemoveBaseClass
+Action Value: ApiController
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: Class
+Action Name: AddBaseClass
+Action Value: ControllerBase
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: Class
+Action Name: AddAttribute
+Action Value: ApiController
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: Using
+Action Name: RemoveDirective
+Action Value: System.Web.Http
+Times Run: 2
+Invalid Executions: 0
+
+Action Type: Using
+Action Name: AddDirective
+Action Value: Microsoft.AspNetCore.Mvc
+Times Run: 1
+Invalid Executions: 0
+
+
+
+===========
+BuildErrors
+===========
+
+
