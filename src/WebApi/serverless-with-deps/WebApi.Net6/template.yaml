@@ -1,0 +1,57 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  Sample SAM Template for MessageProcessor.Lambda
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 10
+    MemorySize: 128
+
+Parameters:
+  SecurityGroupId: 
+    Description: Security Group for the application
+    Type: String
+  Subnet1Id: 
+    Description: Subnet Id for the first subnet
+    Type: String
+  Subnet2Id: 
+    Description: Subnet Id for the second subnet
+    Type: String
+  SecretARN:
+    Description: Subnet Id for the second subnet
+    Type: String
+
+Resources:
+  ApiFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: ./
+      Handler: WebApi.Net6::WebApi.Net6.LambdaEntryPoint::FunctionHandlerAsync
+      Runtime: dotnet6
+      Architectures:
+        - arm64
+      MemorySize: 1024
+      Environment:
+        Variables:
+          DB_CONNECTION_SECRET_NAME: !Ref SecretARN
+      VpcConfig:
+        SecurityGroupIds:
+          - !Ref SecurityGroupId
+        SubnetIds:
+          - !Ref Subnet1Id
+          - !Ref Subnet2Id
+      Events:
+        Api:
+          Type: HttpApi
+          Properties:
+            Path: /{proxy+}
+            Method: ANY
+      Policies:
+        - AWSSecretsManagerGetSecretValuePolicy:
+            SecretArn: !Ref SecretARN
+             
+Outputs:
+  ApiUrl:
+    Description: "API Gateway endpoint URL"
+    Value: !Sub "https://${ServerlessHttpApi}.execute-api.${AWS::Region}.amazonaws.com/"
