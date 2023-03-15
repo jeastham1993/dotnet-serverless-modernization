@@ -5,16 +5,16 @@ namespace WebApi.Net6.Products;
 
 public class DataContext : DbContext
 {
-    private readonly AppSettings _appSettings;
+    private readonly DatabaseConnectionDetails _databaseConnectionDetails;
 
-    public DataContext(AppSettings appSettings)
+    public DataContext(DatabaseConnectionDetails databaseConnectionDetails)
     {
-        _appSettings = appSettings;
+        _databaseConnectionDetails = databaseConnectionDetails;
     }
 
     protected override void OnConfiguring(DbContextOptionsBuilder options)
     {
-        options.UseSqlServer(_appSettings.AsConnectionString());
+        options.UseSqlServer(_databaseConnectionDetails.AsConnectionString());
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

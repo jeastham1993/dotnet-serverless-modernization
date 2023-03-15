@@ -45,7 +45,7 @@ namespace WebApi.Net6
                 }).GetAwaiter().GetResult();
 
             var appSettings =
-                JsonSerializer.Deserialize<AppSettings>(dbConnectionSecret.SecretString);
+                JsonSerializer.Deserialize<DatabaseConnectionDetails>(dbConnectionSecret.SecretString);
             
             services.AddSingleton(appSettings);
 

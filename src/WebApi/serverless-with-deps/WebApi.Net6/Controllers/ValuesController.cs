@@ -15,7 +15,6 @@ namespace WebApi.Net6.Controllers
             _values = new Dictionary<int, string>()
             {{1, "Value 1"}, {2, "Value 2"}, };
         }
-
         // GET api/values
         [HttpGet]
         public IActionResult Get()

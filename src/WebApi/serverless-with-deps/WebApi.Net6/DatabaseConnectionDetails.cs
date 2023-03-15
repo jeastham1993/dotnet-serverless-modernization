@@ -1,6 +1,9 @@
 namespace WebApi.Net6;
 
-public class AppSettings
+/// <summary>
+/// Class pulled from auto-created Database secret from the AWS CDK
+/// </summary>
+public class DatabaseConnectionDetails
 {
     public string password { get; set; }
     public string engine { get; set; }
