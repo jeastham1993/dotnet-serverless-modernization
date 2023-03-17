@@ -1,0 +1,133 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  Sample SAM Template for MessageProcessor.Lambda
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 10
+    Tracing: Active
+    Runtime: dotnet6
+    Architectures:
+      - arm64
+    MemorySize: 1024
+    VpcConfig:
+      SecurityGroupIds:
+        - !Ref SecurityGroupId
+      SubnetIds:
+        - !Ref Subnet1Id
+        - !Ref Subnet2Id
+    Environment:
+      Variables:
+        POWERTOOLS_SERVICE_NAME: webapi-serverless
+        DB_CONNECTION_SECRET_NAME: !Ref SecretARN
+
+Parameters:
+  SecurityGroupId:
+    Description: Security Group for the application
+    Type: String
+  Subnet1Id:
+    Description: Subnet Id for the first subnet
+    Type: String
+  Subnet2Id:
+    Description: Subnet Id for the second subnet
+    Type: String
+  SecretARN:
+    Description: Subnet Id for the second subnet
+    Type: String
+
+Resources:
+  ListProductsFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: ./src/WebApi.SinglePurpose
+      Handler: WebApi.SinglePurpose::WebApi.SinglePurpose.Function_ListProducts_Generated::ListProducts
+      Events:
+        Api:
+          Type: HttpApi
+          Properties:
+            Path: /
+            Method: GET
+      Policies:
+        - AWSSecretsManagerGetSecretValuePolicy:
+            SecretArn: !Ref SecretARN
+            
+  CreateProductFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: ./src/WebApi.SinglePurpose
+      Handler: WebApi.SinglePurpose::WebApi.SinglePurpose.Function_CreateProduct_Generated::CreateProduct
+      Events:
+        Api:
+          Type: HttpApi
+          Properties:
+            Path: /
+            Method: POST
+      Policies:
+        - AWSSecretsManagerGetSecretValuePolicy:
+            SecretArn: !Ref SecretARN
+  
+  GetProductFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: ./src/WebApi.SinglePurpose
+      Handler: WebApi.SinglePurpose::WebApi.SinglePurpose.Function_GetProduct_Generated::GetProduct
+      Events:
+        Api:
+          Type: HttpApi
+          Properties:
+            Path: /{id}
+            Method: GET
+      Policies:
+        - AWSSecretsManagerGetSecretValuePolicy:
+            SecretArn: !Ref SecretARN
+  
+  UpdateProductFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: ./src/WebApi.SinglePurpose
+      Handler: WebApi.SinglePurpose::WebApi.SinglePurpose.Function_UpdateProduct_Generated::UpdateProduct
+      Events:
+        Api:
+          Type: HttpApi
+          Properties:
+            Path: /{id}
+            Method: PUT
+      Policies:
+        - AWSSecretsManagerGetSecretValuePolicy:
+            SecretArn: !Ref SecretARN
+  
+  DeleteProductFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: ./src/WebApi.SinglePurpose
+      Handler: WebApi.SinglePurpose::WebApi.SinglePurpose.Function_DeleteProduct_Generated::DeleteProduct
+      Events:
+        Api:
+          Type: HttpApi
+          Properties:
+            Path: /{id}
+            Method: DELETE
+      Policies:
+        - AWSSecretsManagerGetSecretValuePolicy:
+            SecretArn: !Ref SecretARN
+  
+  ApplyDbMigrations:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: ./src/WebApi.SinglePurpose
+      Handler: WebApi.SinglePurpose::WebApi.SinglePurpose.Function_ApplyDbMigrations_Generated::ApplyDbMigrations
+      Events:
+        Api:
+          Type: HttpApi
+          Properties:
+            Path: /tools/migrate
+            Method: GET
+      Policies:
+        - AWSSecretsManagerGetSecretValuePolicy:
+            SecretArn: !Ref SecretARN
+
+Outputs:
+  ApiUrl:
+    Description: "API Gateway endpoint URL"
+    Value: !Sub "https://${ServerlessHttpApi}.execute-api.${AWS::Region}.amazonaws.com/"
