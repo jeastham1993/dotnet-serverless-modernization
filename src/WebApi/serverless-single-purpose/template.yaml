@@ -57,6 +57,7 @@ Resources:
     Properties:
       CodeUri: ./src/WebApi.SinglePurpose
       Handler: WebApi.SinglePurpose::WebApi.SinglePurpose.Function_CreateProduct_Generated::CreateProduct
+      MemorySize: 3000
       Events:
         Api:
           Type: HttpApi
@@ -72,6 +73,7 @@ Resources:
     Properties:
       CodeUri: ./src/WebApi.SinglePurpose
       Handler: WebApi.SinglePurpose::WebApi.SinglePurpose.Function_GetProduct_Generated::GetProduct
+      Memory: 512
       Events:
         Api:
           Type: HttpApi

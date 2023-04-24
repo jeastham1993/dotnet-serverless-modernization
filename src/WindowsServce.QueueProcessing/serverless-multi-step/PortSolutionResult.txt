@@ -1,0 +1,315 @@
+==========
+References
+==========
+MessageProcessor.App
+MessageProcessor.Shared
+System.Threading.Tasks
+System
+MassTransit
+Topshelf
+Topshelf.ServiceConfigurators
+Topshelf.HostConfigurators
+MassTransit.Configuration
+System.Collections.Generic
+System.Linq
+System.Text
+System.Reflection
+System.Runtime.CompilerServices
+System.Runtime.InteropServices
+MassTransit.NLogIntegration
+System.Threading
+project.all
+MessageProcessor.Publisher
+
+===============
+DownloadedFiles
+===============
+project.all.json
+
+==============
+ProjectResults
+==============
+----------------------
+Showing results for: C:\Users\jamesuk\source\temp\QueueProcessor.Shared\QueueProcessor.Shared.csproj
+----------------------
+---------------------------
+Target Versions:
+---------------------------
+net6.0
+---------------------------
+Source Versions:
+---------------------------
+net48
+---------------------------
+Upgrade packages:
+---------------------------
+---------------------------
+Action packages:
+---------------------------
+---------------------------
+Executed Actions for file: Project
+---------------------------
+
+Action Type: Project
+Action Name: ArchiveFiles
+Action Value: BundleConfig.cs,FilterConfig.cs,RouteConfig.cs,WebApiConfig.cs,global.asax.cs,global.asax,AssemblyInfo.cs,packages.config
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: ProjectFile
+Action Name: MigrateProjectFile
+Action Value: 
+Times Run: 1
+Invalid Executions: 0
+
+
+----------------------
+Showing results for: C:\Users\jamesuk\source\temp\QueueProcessor.App\QueueProcessor.App.csproj
+----------------------
+---------------------------
+Target Versions:
+---------------------------
+net6.0
+---------------------------
+Source Versions:
+---------------------------
+net48
+---------------------------
+Upgrade packages:
+---------------------------
+Microsoft.Bcl.AsyncInterfaces,6.0.0->7.0.0
+Microsoft.Extensions.Configuration.Abstractions,6.0.0->7.0.0
+Microsoft.Extensions.DependencyInjection.Abstractions,6.0.0->7.0.0
+Microsoft.Extensions.Diagnostics.HealthChecks,6.0.1->6.0.2
+Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,6.0.1->6.0.2
+Microsoft.Extensions.FileProviders.Abstractions,6.0.0->7.0.0
+Microsoft.Extensions.Hosting.Abstractions,6.0.0->7.0.0
+Microsoft.Extensions.Logging.Abstractions,6.0.1->6.0.2
+Microsoft.Extensions.Options,6.0.0->7.0.0
+Microsoft.Extensions.Primitives,6.0.0->7.0.0
+NLog,4.7.5->4.7.6
+System.Diagnostics.DiagnosticSource,6.0.0->7.0.0
+System.Memory,4.5.4->4.5.5
+System.Runtime,4.3.0->4.3.1
+System.Security.Cryptography.Algorithms,4.3.0->4.3.1
+System.Security.Cryptography.X509Certificates,4.3.0->4.3.1
+System.Text.Encodings.Web,6.0.0->7.0.0
+System.Text.Json,6.0.7->7.0.0
+System.Threading.Channels,6.0.0->7.0.0
+---------------------------
+Action packages:
+---------------------------
+---------------------------
+Executed Actions for file: Project
+---------------------------
+
+Action Type: Project
+Action Name: ArchiveFiles
+Action Value: BundleConfig.cs,FilterConfig.cs,RouteConfig.cs,WebApiConfig.cs,global.asax.cs,global.asax,AssemblyInfo.cs,packages.config
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: ProjectFile
+Action Name: MigrateProjectFile
+Action Value: 
+Times Run: 1
+Invalid Executions: 0
+
+
+----------------------
+Showing results for: C:\Users\jamesuk\source\temp\QueueProcessor.Publisher\QueueProcessor.Publisher.csproj
+----------------------
+---------------------------
+Target Versions:
+---------------------------
+net6.0
+---------------------------
+Source Versions:
+---------------------------
+net48
+---------------------------
+Upgrade packages:
+---------------------------
+Microsoft.Bcl.AsyncInterfaces,6.0.0->7.0.0
+Microsoft.Extensions.Configuration.Abstractions,6.0.0->7.0.0
+Microsoft.Extensions.DependencyInjection.Abstractions,6.0.0->7.0.0
+Microsoft.Extensions.Diagnostics.HealthChecks,6.0.1->6.0.2
+Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,6.0.1->6.0.2
+Microsoft.Extensions.FileProviders.Abstractions,6.0.0->7.0.0
+Microsoft.Extensions.Hosting.Abstractions,6.0.0->7.0.0
+Microsoft.Extensions.Logging.Abstractions,6.0.1->6.0.2
+Microsoft.Extensions.Options,6.0.0->7.0.0
+Microsoft.Extensions.Primitives,6.0.0->7.0.0
+System.Diagnostics.DiagnosticSource,6.0.0->7.0.0
+System.Memory,4.5.4->4.5.5
+System.Runtime,4.3.0->4.3.1
+System.Security.Cryptography.Algorithms,4.3.0->4.3.1
+System.Security.Cryptography.X509Certificates,4.3.0->4.3.1
+System.Text.Encodings.Web,6.0.0->7.0.0
+System.Text.Json,6.0.7->7.0.0
+System.Threading.Channels,6.0.0->7.0.0
+---------------------------
+Action packages:
+---------------------------
+---------------------------
+Executed Actions for file: Project
+---------------------------
+
+Action Type: Project
+Action Name: ArchiveFiles
+Action Value: BundleConfig.cs,FilterConfig.cs,RouteConfig.cs,WebApiConfig.cs,global.asax.cs,global.asax,AssemblyInfo.cs,packages.config
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: ProjectFile
+Action Name: MigrateProjectFile
+Action Value: 
+Times Run: 1
+Invalid Executions: 0
+
+
+----------------------
+Showing results for: C:\Users\jamesuk\source\temp\QueueProcessor.Publisher\QueueProcessor.Publisher.csproj
+----------------------
+---------------------------
+Target Versions:
+---------------------------
+net6.0
+---------------------------
+Source Versions:
+---------------------------
+net48
+---------------------------
+Upgrade packages:
+---------------------------
+Microsoft.Bcl.AsyncInterfaces,6.0.0->7.0.0
+Microsoft.Extensions.Configuration.Abstractions,6.0.0->7.0.0
+Microsoft.Extensions.DependencyInjection.Abstractions,6.0.0->7.0.0
+Microsoft.Extensions.Diagnostics.HealthChecks,6.0.1->6.0.2
+Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,6.0.1->6.0.2
+Microsoft.Extensions.FileProviders.Abstractions,6.0.0->7.0.0
+Microsoft.Extensions.Hosting.Abstractions,6.0.0->7.0.0
+Microsoft.Extensions.Logging.Abstractions,6.0.1->6.0.2
+Microsoft.Extensions.Options,6.0.0->7.0.0
+Microsoft.Extensions.Primitives,6.0.0->7.0.0
+System.Diagnostics.DiagnosticSource,6.0.0->7.0.0
+System.Memory,4.5.4->4.5.5
+System.Runtime,4.3.0->4.3.1
+System.Security.Cryptography.Algorithms,4.3.0->4.3.1
+System.Security.Cryptography.X509Certificates,4.3.0->4.3.1
+System.Text.Encodings.Web,6.0.0->7.0.0
+System.Text.Json,6.0.7->7.0.0
+System.Threading.Channels,6.0.0->7.0.0
+---------------------------
+Action packages:
+---------------------------
+---------------------------
+Executed Actions for file: Project
+---------------------------
+
+Action Type: Project
+Action Name: ArchiveFiles
+Action Value: BundleConfig.cs,FilterConfig.cs,RouteConfig.cs,WebApiConfig.cs,global.asax.cs,global.asax,AssemblyInfo.cs,packages.config
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: ProjectFile
+Action Name: MigrateProjectFile
+Action Value: 
+Times Run: 1
+Invalid Executions: 0
+
+
+----------------------
+Showing results for: C:\Users\jamesuk\source\temp\QueueProcessor.App\QueueProcessor.App.csproj
+----------------------
+---------------------------
+Target Versions:
+---------------------------
+net6.0
+---------------------------
+Source Versions:
+---------------------------
+net48
+---------------------------
+Upgrade packages:
+---------------------------
+Microsoft.Bcl.AsyncInterfaces,6.0.0->7.0.0
+Microsoft.Extensions.Configuration.Abstractions,6.0.0->7.0.0
+Microsoft.Extensions.DependencyInjection.Abstractions,6.0.0->7.0.0
+Microsoft.Extensions.Diagnostics.HealthChecks,6.0.1->6.0.2
+Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,6.0.1->6.0.2
+Microsoft.Extensions.FileProviders.Abstractions,6.0.0->7.0.0
+Microsoft.Extensions.Hosting.Abstractions,6.0.0->7.0.0
+Microsoft.Extensions.Logging.Abstractions,6.0.1->6.0.2
+Microsoft.Extensions.Options,6.0.0->7.0.0
+Microsoft.Extensions.Primitives,6.0.0->7.0.0
+NLog,4.7.5->4.7.6
+System.Diagnostics.DiagnosticSource,6.0.0->7.0.0
+System.Memory,4.5.4->4.5.5
+System.Runtime,4.3.0->4.3.1
+System.Security.Cryptography.Algorithms,4.3.0->4.3.1
+System.Security.Cryptography.X509Certificates,4.3.0->4.3.1
+System.Text.Encodings.Web,6.0.0->7.0.0
+System.Text.Json,6.0.7->7.0.0
+System.Threading.Channels,6.0.0->7.0.0
+---------------------------
+Action packages:
+---------------------------
+---------------------------
+Executed Actions for file: Project
+---------------------------
+
+Action Type: Project
+Action Name: ArchiveFiles
+Action Value: BundleConfig.cs,FilterConfig.cs,RouteConfig.cs,WebApiConfig.cs,global.asax.cs,global.asax,AssemblyInfo.cs,packages.config
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: ProjectFile
+Action Name: MigrateProjectFile
+Action Value: 
+Times Run: 1
+Invalid Executions: 0
+
+
+----------------------
+Showing results for: C:\Users\jamesuk\source\temp\QueueProcessor.Shared\QueueProcessor.Shared.csproj
+----------------------
+---------------------------
+Target Versions:
+---------------------------
+net6.0
+---------------------------
+Source Versions:
+---------------------------
+net48
+---------------------------
+Upgrade packages:
+---------------------------
+---------------------------
+Action packages:
+---------------------------
+---------------------------
+Executed Actions for file: Project
+---------------------------
+
+Action Type: Project
+Action Name: ArchiveFiles
+Action Value: BundleConfig.cs,FilterConfig.cs,RouteConfig.cs,WebApiConfig.cs,global.asax.cs,global.asax,AssemblyInfo.cs,packages.config
+Times Run: 1
+Invalid Executions: 0
+
+Action Type: ProjectFile
+Action Name: MigrateProjectFile
+Action Value: 
+Times Run: 1
+Invalid Executions: 0
+
+
+
+===========
+BuildErrors
+===========
+
+

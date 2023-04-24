@@ -1,0 +1,51 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  Sample SAM Template for MessageProcessor.Lambda
+
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 10
+    MemorySize: 1024
+    Environment:
+      Variables:
+        POWERTOOLS_SERVICE_NAME: multi-step-serverless
+
+Resources:
+  CheckStockFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: ./src/CheckStock/
+      Handler: CheckStock::CheckStock.Function::FunctionHandler
+      Runtime: dotnet6
+      Architectures:
+        - x86_64
+      MemorySize: 1024
+    
+  PriceOrderFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      Timeout: 40
+      CodeUri: ./src/PriceOrder/
+      Handler: PriceOrder::PriceOrder.Function::FunctionHandler
+      Runtime: dotnet6
+      Architectures:
+        - x86_64
+      MemorySize: 1024
+
+  PlaceOrderQueue:
+    Type: AWS::SQS::Queue
+
+  OrderProcessingStateMachine:
+    Type: AWS::Serverless::StateMachine # More info about State Machine Resource: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-statemachine.html
+    Properties:
+      DefinitionUri: ./orderprocessor.asl.json
+      DefinitionSubstitutions:
+        PriceOrderFunction: !GetAtt PriceOrderFunction.Arn
+        CheckStockFunction: !GetAtt CheckStockFunction.Arn
+      Policies: # Find out more about SAM policy templates: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-policy-templates.html
+        - LambdaInvokePolicy:
+            FunctionName: !Ref PriceOrderFunction
+        - LambdaInvokePolicy:
+            FunctionName: !Ref CheckStockFunction

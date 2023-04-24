@@ -6,6 +6,7 @@ using Amazon.Runtime;
 using Amazon.Runtime.CredentialManagement;
 using Amazon.SecretsManager;
 using Amazon.SecretsManager.Model;
+using AWS.Lambda.Powertools.Logging;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using WebApi.Shared;
@@ -34,6 +35,8 @@ public class Startup
 
         var appSettings =
             JsonSerializer.Deserialize<DatabaseConnectionDetails>(dbConnectionSecret.SecretString);
+        
+        Logger.LogInformation(appSettings.AsConnectionString());
             
         services.AddSingleton(appSettings);
 
