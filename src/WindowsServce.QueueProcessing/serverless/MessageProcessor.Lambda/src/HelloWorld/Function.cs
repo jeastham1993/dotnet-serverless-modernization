@@ -14,6 +14,7 @@ using MessageProcessor.Shared;
 
 namespace HelloWorld
 {
+    using System.IO;
 
     public class Function
     {
@@ -24,7 +25,7 @@ namespace HelloWorld
             this._stockChecker = new StockChecker();
         }
 
-        public async Task FunctionHandler(SQSEvent sqsEvent, ILambdaContext context)
+        public async Task FunctionHandler(Stream _)
         {
             foreach (var message in sqsEvent.Records)
             {

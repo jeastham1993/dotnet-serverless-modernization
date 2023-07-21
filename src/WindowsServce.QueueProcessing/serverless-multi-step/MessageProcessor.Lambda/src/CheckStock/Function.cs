@@ -35,6 +35,7 @@ namespace CheckStock
 
                 Logger.LogInformation($"Stock Check Result: {stockCheckResult}");
             }
+            
             if (command.Items.Any(p => p.InStock == false))
             {
                 throw new OrderNotInStockException("Order contains products that are not in stock.");

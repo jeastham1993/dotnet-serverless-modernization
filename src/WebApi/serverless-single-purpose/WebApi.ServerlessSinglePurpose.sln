@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.SinglePurpose.Test",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.Net6", "..\serverless-with-deps\WebApi.Net6\WebApi.Net6.csproj", "{6A60E6D3-B50E-43A4-AAEF-FE1A12432F70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetProduct", "..\..\..\..\serverless-dotnet-demo\src\NET6\GetProduct\GetProduct.csproj", "{5280A785-C2E4-4810-BD9B-B9E4BE9B0AB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{6A60E6D3-B50E-43A4-AAEF-FE1A12432F70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A60E6D3-B50E-43A4-AAEF-FE1A12432F70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A60E6D3-B50E-43A4-AAEF-FE1A12432F70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5280A785-C2E4-4810-BD9B-B9E4BE9B0AB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5280A785-C2E4-4810-BD9B-B9E4BE9B0AB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5280A785-C2E4-4810-BD9B-B9E4BE9B0AB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5280A785-C2E4-4810-BD9B-B9E4BE9B0AB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

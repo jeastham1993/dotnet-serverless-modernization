@@ -11,7 +11,6 @@ using QueueProcessor.Shared;
 
 namespace PriceOrder
 {
-
     public class Function
     {
         private readonly IPricingEngine _pricingEngine;
